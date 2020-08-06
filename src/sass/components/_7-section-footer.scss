@@ -1,17 +1,3 @@
-body {
-  font-family: Open Sans;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 // Registration form
 
 .online-reg {
@@ -22,7 +8,7 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer .container > .title {
-  font-family: Raleway;
+  font-family: $secondary-font;
   font-weight: bold;
   font-size: 42px;
   line-height: 1.17;
@@ -64,7 +50,7 @@ footer .container > .title {
 
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  transition: color 250ms $timing-function, border-bottom 250ms $timing-function;
+  transition: color $time $cubic, border-bottom $time $cubic;
 
   font-weight: 600;
   font-size: 11px;
@@ -79,18 +65,23 @@ footer .container > .title {
 
 .footer-button {
   @extend .button;
-  display: inline-flex;
   color: $alternative-tittle-color;
 }
 
 // Contacts
 
 .contacts {
+  background-image: url(../images/footer/footer-img-mobile.png);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/footer/footer-img-mobile@2x.png);
+  }
   background-color: $form-background-color;
-  background-image: url(../images/footer/footer-img-moobile480.png);
+  max-width: 480px;
   background-repeat: no-repeat;
   background-size: cover;
-  //   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   padding-top: 84px;
   padding-bottom: 84px;
@@ -117,8 +108,19 @@ footer .container > .title {
   }
 }
 
-.working-hours > .title {
+.title-box {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.working-hours .line {
+  width: 60px;
+  height: 1px;
+}
+
+.working-hours .title {
+  margin-left: 20px;
 
   font-weight: 600;
   font-size: 11px;
@@ -150,6 +152,8 @@ footer .container > .title {
   margin-bottom: 20px;
 
   & > .item {
+    display: flex;
+    align-items: center;
     margin-right: 0;
     margin-left: auto;
   }
@@ -171,14 +175,21 @@ footer .container > .title {
 .copyright .line {
   width: 60px;
   height: 1px;
+  fill: $tittle-color;
 }
 
-.svg-item {
+.icon-copyright {
+  width: 12px;
+  height: 12px;
+}
+
+.icon-text {
   display: flex;
   align-items: center;
 }
 
 .copyright .text {
+  margin-left: 6px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
