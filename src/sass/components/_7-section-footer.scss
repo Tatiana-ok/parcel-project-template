@@ -1,3 +1,13 @@
+.page-footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 644px;
+    background-color: $form-background-color;
+  }
+}
+
 // Registration form
 
 .online-reg {
@@ -14,7 +24,14 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 130px;
-    padding-bottom: 193px;
+    padding-bottom: 0px;
+  }
+}
+
+.online-reg .container {
+  @media screen and (min-width: 1200px) {
+    padding-left: 55px;
+    padding-right: 40px;
   }
 }
 
@@ -86,9 +103,10 @@
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+
   &::placeholder {
     color: rgba(157, 164, 189, 0.4);
+    text-transform: uppercase;
   }
   &.message {
     resize: none;
@@ -104,6 +122,15 @@
 // Contacts
 
 .contacts {
+  // max-width: 480px;
+  height: auto;
+  background-color: $form-background-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 84px;
+  padding-bottom: 84px;
+
   background-image: url(../images/footer/footer-img-mobile.png);
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -112,9 +139,10 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    // max-width: 768px;
     padding-top: 100px;
     padding-bottom: 100px;
+
     background-image: url(../images/footer/footer-img-tablet.png);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -124,9 +152,13 @@
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    // max-width: 1200px;
     padding-top: 130px;
     padding-bottom: 130px;
+    padding-left: 85px;
+    padding-right: 90px;
+    min-width: 625px;
+
     background-image: url(../images/footer/footer-img-desktop.png);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -134,19 +166,10 @@
       background-image: url(../images/footer/footer-img-desktop@2x.png);
     }
   }
-
-  max-width: 480px;
-  height: auto;
-  background-color: $form-background-color;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  padding-top: 84px;
-  padding-bottom: 84px;
 }
 
 .contacts .container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: center;
   }
@@ -166,6 +189,10 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     width: 330px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 70px;
   }
 
   & .link {
@@ -206,7 +233,7 @@
 
 //Working-hours
 .working-hours {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 330px;
     margin-right: 0;
     margin-left: auto;
@@ -229,7 +256,7 @@
 
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.36;
+  line-height: 1.37;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
