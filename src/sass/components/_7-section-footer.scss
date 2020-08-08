@@ -48,7 +48,9 @@
 }
 
 .form-field:first-child {
-  margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
 }
 
 .form-field:last-child {
@@ -196,6 +198,12 @@
   }
 }
 
+.address-name {
+  @media screen and (min-width: 768px) {
+    width: 230px;
+  }
+}
+
 //Working-hours
 .working-hours {
   @media screen and (min-width: 768px) {
@@ -241,28 +249,33 @@
   padding-top: 44px;
   padding-bottom: 44px;
   background-color: $section-masters-backfround-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
 
 .copyright .container {
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: row-reverse;
   }
 }
 
 .social-media {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  width: 270px;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 
   & > .item {
     display: flex;
     align-items: center;
-    margin-right: 0;
-    margin-left: auto;
-  }
-
-  & > .item + .item {
-    margin-left: 40px;
   }
 
   & .link {
@@ -283,6 +296,7 @@
   width: 60px;
   height: 1px;
   fill: $tittle-color;
+  vertical-align: middle;
 }
 
 .icon-copyright {
