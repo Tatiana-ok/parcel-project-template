@@ -32,11 +32,22 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #555555;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
   font-style: normal;
+}
+
+address {
+  font-style: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -56,6 +67,8 @@ p {
 
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 .section-tittle {
