@@ -184,16 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\header\\header-mobile-480.jpg":[["header-mobile-480.ed7ab19d.jpg","images/header/header-mobile-480.jpg"],"images/header/header-mobile-480.jpg"],"./..\\images\\header\\header-tablet-609.jpg":[["header-tablet-609.8d454c84.jpg","images/header/header-tablet-609.jpg"],"images/header/header-tablet-609.jpg"],"./..\\images\\header\\header-desktop-1125.jpg":[["header-desktop-1125.77b32583.jpg","images/header/header-desktop-1125.jpg"],"images/header/header-desktop-1125.jpg"],"./..\\images\\services-prices\\services-480.png":[["services-480.3e5f1a5f.png","images/services-prices/services-480.png"],"images/services-prices/services-480.png"],"./..\\images\\services-prices\\services-768.png":[["services-768.c3058c8a.png","images/services-prices/services-768.png"],"images/services-prices/services-768.png"],"./..\\images\\services-prices\\services-1200.png":[["services-1200.e67b8045.png","images/services-prices/services-1200.png"],"images/services-prices/services-1200.png"],"./..\\images\\footer\\footer-img-mobile.png":[["footer-img-mobile.e2635e18.png","images/footer/footer-img-mobile.png"],"images/footer/footer-img-mobile.png"],"./..\\images\\footer\\footer-img-mobile@2x.png":[["footer-img-mobile@2x.fe6a81e2.png","images/footer/footer-img-mobile@2x.png"],"images/footer/footer-img-mobile@2x.png"],"./..\\images\\footer\\footer-img-tablet.png":[["footer-img-tablet.73c5a1db.png","images/footer/footer-img-tablet.png"],"images/footer/footer-img-tablet.png"],"./..\\images\\footer\\footer-img-tablet@2x.png":[["footer-img-tablet@2x.2781f816.png","images/footer/footer-img-tablet@2x.png"],"images/footer/footer-img-tablet@2x.png"],"./..\\images\\footer\\footer-img-desktop.png":[["footer-img-desktop.529cba46.png","images/footer/footer-img-desktop.png"],"images/footer/footer-img-desktop.png"],"./..\\images\\footer\\footer-img-desktop@2x.png":[["footer-img-desktop@2x.e5fd14ef.png","images/footer/footer-img-desktop@2x.png"],"images/footer/footer-img-desktop@2x.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\images\\services-prices\\services-480.png":[["services-480.3e5f1a5f.png","images/services-prices/services-480.png"],"images/services-prices/services-480.png"],"./..\\images\\services-prices\\services-768.png":[["services-768.c3058c8a.png","images/services-prices/services-768.png"],"images/services-prices/services-768.png"],"./..\\images\\services-prices\\services-1200.png":[["services-1200.e67b8045.png","images/services-prices/services-1200.png"],"images/services-prices/services-1200.png"],"./..\\images\\footer\\footer-img-moobile480.png":[["footer-img-moobile480.6f1f0855.png","images/footer/footer-img-moobile480.png"],"images/footer/footer-img-moobile480.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -221,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64572" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49713" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -397,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/main.521f9405.js.map
