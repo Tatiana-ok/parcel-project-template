@@ -1,5 +1,6 @@
 .page-footer {
   background-color: $form-background-color;
+  position: relative;
 }
 
 .big-container {
@@ -11,13 +12,13 @@
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 // Registration form
 
 .online-reg {
-  // background-color: $form-background-color;
   padding-top: 84px;
   padding-bottom: 84px;
   text-align: center;
@@ -30,16 +31,14 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 130px;
-    // padding-bottom: 0px;
   }
 }
 
 .online-reg .container {
   @media screen and (min-width: 1200px) {
-    // max-width: 590px;
-    min-width: 600px;
-    padding-left: 0px;
-    padding-right: 40px;
+    min-width: 575px;
+    padding-left: 0;
+    padding-right: 15px;
   }
 }
 
@@ -130,9 +129,6 @@
 // Contacts
 
 .contacts {
-  // max-width: 480px;
-  // height: auto;
-  // background-color: $form-background-color;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -147,7 +143,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    // max-width: 768px;
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -160,7 +155,11 @@
   }
 
   @media screen and (min-width: 1200px) {
-    // max-width: 1200px;
+    position: absolute;
+    right: 0;
+    width: 625px;
+    height: 100%;
+
     padding-top: 130px;
     padding-bottom: 130px;
 
@@ -180,10 +179,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    // display: block;
     padding-left: 85px;
     padding-right: 90px;
-    min-width: 625px;
   }
 }
 
@@ -324,11 +321,13 @@
     letter-spacing: 0.2em;
 
     color: #303030;
+    transition: color $time $cubic;
   }
 }
 
-.social-media .link:hover {
-  color: orange;
+.social-media .link:hover,
+.social-media .link:focus {
+  color: $accent-color;
 }
 
 .copyright .line {
